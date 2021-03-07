@@ -3,24 +3,10 @@
         <a href="E:\HTML\Hotel Booking Website\index.html">
             <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
         </a>
-        <a href="E:\HTML\Hotel Booking Website\login.html">Login</a>
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
-            html {
-                height: 100%;
-                width: 100%;
-                background: #e0e0e0;
-            }
-            header {
-                background-color: rosybrown;
-            }
-            footer {
-                background-color: rosybrown;
-            }
-            body {
-                height: 100%;
-                width: 100%;
-                margin: 0%;
-            }
             body img{
                 height: 500px;
                 width: 500px;
@@ -39,10 +25,7 @@
                 margin-left: 4%;
                 margin-right: 4%;
             }
-            footer img{
-                height: 20px;
-                width: 22px;
-            }
+            
         </style>
     </header>
     <body>
@@ -81,14 +64,19 @@
         </div>
     </body>
     <footer>
-        <a href="E:\HTML\Hotel Booking Website\contact.html" target="_blank">Contact Us</a><br>
-        <a href="https://www.facebook.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>
-        <a href="https://www.twitter.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a><br>
-        &copy;<span>2020 ROOM SEARCH PVT LTD</span>
+        <div class="foot">
+            <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a>
+        </div>
+
+        <div id="copyright">&copy;<span>2020 ROOM SEARCH PVT LTD</span></div>
+
+        <div class="foot">
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>    
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png"></a>           
+        </div>
     </footer>
 </html>

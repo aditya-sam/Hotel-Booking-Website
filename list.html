@@ -3,62 +3,61 @@
         <a href="E:\HTML\Hotel Booking Website\index.html">
             <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
         </a>
-        <a href="E:\HTML\Hotel Booking Website\login.html">Login</a>
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
-            html {
-                height: 100%;
-                width: 100%;
-                background: #e0e0e0;
-            }
-            header {
-                background-color: rosybrown;
-            }
-            footer {
-                background-color: rosybrown;
-            }
-            body {
-                height: 100%;
-                width: 100%;
-                margin: 0%;
-            }
             .hotels{
                 margin: 2%;
                 background-color: rgb(132,136,139);
                 width: 40%;
                 display: block;
             }
+            #list {
+                display: flex;
+                flex-wrap: wrap;
+            }
             #list img{
                 height: 200px;
                 width: 250px;
             }
-            footer img{
-                height: 20px;
-                width: 22px;
+            #list-map {
+                font-weight: bold;
+                color: black;
+                display: flex;
+                align-content: center;
+                justify-content: space-evenly;
+                margin-left: 40%;
+                margin-right: 40%;
+                padding-top: 1%;
+            }
+            #map {
+                display: none;
             }
         </style>
     </header>
     <body>
-        <ul style="list-style-type: circle;">
-            <li><a href="#list">List view</a></li>
-            <li><a href="#map">Map View</a></li>    
-        </ul>
+        <div id="list-map">
+            <a href="#list">List view</a>
+            <a href="#map">Map View</a>
+        </div>
         <div id="list">
             
             <a href="E:\HTML\Hotel Booking Website\detail.html" class="hotels">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-                <h3>Radisson Blu Hotel</h3><br/>
+                <h3>Radisson Blu Hotel</h3>
                 5 Star<br>
                 <p>New Delhi</p>  
             </a>
             <div class="hotels">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"><br>
-                <p>The Lalit New Delhi</p>
+                <h3>The Lalit New Delhi</h3>
                 <p>4.5 Star</p>
                 <p>New Delhi</p>
             </div>
             <div class="hotels">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"><br>
-                <p>Taj Palace</p>
+                <h3>Taj Palace</h3>
                 <p>4.0 Star</p>
                 <p>New Delhi</p>
             </div>
@@ -70,14 +69,19 @@
         
     </body>
     <footer>
-        <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a><br>
-        <a href="https://www.facebook.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>
-        <a href="https://www.twitter.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a><br>
-        &copy;<span>2020 ROOM SEARCH PVT LTD</span>
+        <div class="foot">
+            <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a>
+        </div>
+
+        <div id="copyright">&copy;<span>2020 ROOM SEARCH PVT LTD</span></div>
+
+        <div class="foot">
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>    
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png"></a>           
+        </div>
     </footer>
 </html>

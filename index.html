@@ -1,31 +1,13 @@
 <html>
     <header>
         <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
-        <a href="E:\HTML\Hotel Booking Website\login.html">Login</a><br/>
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
-            html {
-                height: 100%;
-                width: 100%;
-                background: #e0e0e0;
-            }
-            header {
-                background-color: rosybrown;
-            }
-            footer {
-                background-color: rosybrown;
-            }
-            body {
-                height: 100%;
-                width: 100%;
-                margin: 0%;
-            }
             body img{
                 height: 150px;
                 width: 150px;
-            }
-            footer img{
-                height: 20px;
-                width: 22px;
             }
             #city {
                 background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -33,7 +15,20 @@
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+            #search {
+                border: 1px solid transparent;
+                border-radius: 12px;
+                background-color: #f1f1f1;
+                padding: 10px;
+                font-size: 16px;
+                margin-top: 170px;
+                margin-bottom: 170px;
+                width: 24em;
+            } 
             .city-card{
                 padding: 4%;
                 justify-content: space-evenly;
@@ -43,12 +38,20 @@
                 margin-left: 20%;
                 margin-right: 15%;
             }
+            #view {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                padding-bottom: 2%;
+            }
         </style>
     </header>
     <body>
-        <form id="city">
-            <input type="text" placeholder="City"/>
-        </form>
+        <div id="city">
+            <form >
+                <input id="search" type="text" placeholder="City"/>
+            </form>
+        </div>
         <div id="city-card">
             <a href="E:\HTML\Hotel Booking Website\list.html">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city-card">
@@ -56,18 +59,23 @@
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="city-card">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="city-card">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city-card">
-        </div>    
-        <a href="E:\HTML\Hotel Booking Website\index.html">View more>></a>        
+        </div>     
+        <div id="view"><a href="E:\HTML\Hotel Booking Website\index.html">View more>></a></div>
     </body>
     <footer>
-        <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a><br>
-        <a href="https://www.facebook.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>
-        <a href="https://www.twitter.com" target="_blank">
-        <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a><br>
-        &copy;<span>2020 ROOM SEARCH PVT LTD</span>
+        <div class="foot">
+            <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a>
+        </div>
+
+        <div id="copyright">&copy;<span>2020 ROOM SEARCH PVT LTD</span></div>
+
+        <div class="foot">
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\instagram.png"></a>    
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="E:\HTML\Hotel Booking Website\assests\images\facebook.png"></a>           
+        </div>
     </footer>
 </html>
