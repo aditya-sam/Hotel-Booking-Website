@@ -6,10 +6,18 @@
             html {
                 height: 100%;
                 width: 100%;
+                background: #e0e0e0;
+            }
+            header {
+                background-color: rosybrown;
+            }
+            footer {
+                background-color: rosybrown;
             }
             body {
                 height: 100%;
                 width: 100%;
+                margin: 0%;
             }
             body img{
                 height: 150px;
@@ -19,20 +27,37 @@
                 height: 20px;
                 width: 22px;
             }
+            #city {
+                background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+                height: 380px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .city-card{
+                padding: 4%;
+                justify-content: space-evenly;
+                border-radius: 25%;
+            }
+            #city-card{
+                margin-left: 20%;
+                margin-right: 15%;
+            }
         </style>
     </header>
     <body>
-        <form>
+        <form id="city">
             <input type="text" placeholder="City"/>
         </form>
-        <a href="E:\HTML\Hotel Booking Website\list.html">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
-        </a>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-        <br>
-        <a href="E:\HTML\Hotel Booking Website\index.html">View more>></a>
+        <div id="city-card">
+            <a href="E:\HTML\Hotel Booking Website\list.html">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city-card">
+            </a>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="city-card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="city-card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city-card">
+        </div>    
+        <a href="E:\HTML\Hotel Booking Website\index.html">View more>></a>        
     </body>
     <footer>
         <a href="E:\HTML\Hotel Booking Website\contact.html">Contact Us</a><br>
@@ -44,6 +69,5 @@
         <a href="https://www.twitter.com" target="_blank">
         <img src="E:\HTML\Hotel Booking Website\assests\images\twitter.png"></a><br>
         &copy;<span>2020 ROOM SEARCH PVT LTD</span>
-
     </footer>
 </html>
