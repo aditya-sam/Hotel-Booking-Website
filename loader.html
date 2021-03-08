@@ -2,6 +2,10 @@
     <div>
         <body>
             <style>
+                @keyframes loading {
+                    0% { transform: rotate(0deg);}
+                    100% { transform: rotate(360deg);}                  
+                }
                 div{
                     border: 12px solid;
                     border-radius: 50%;
@@ -16,6 +20,7 @@
                     position: fixed;
                     top: 50%;
                     left: 50%;
+                    animation: loading 1s linear infinite;
                 }
             </style>
         </body>
