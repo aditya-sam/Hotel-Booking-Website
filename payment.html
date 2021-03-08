@@ -1,28 +1,41 @@
 <html>
     <header>
         <a href="E:\HTML\Hotel Booking Website\index.html">
-            <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
+            <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px; margin-left: 1%;">
         </a>
-        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a>
         <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
-            body img{
-                height: 500px;
-                width: 500px;
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8%;
+            }
+            #content img{
+                height: 100%;
+                width: 45%;
             }
             #content {
                 background-color: rgb(132,136,139);
-                width: 50%;
-                height: 85%;
+                width: 42%;
+                height: 200px;
                 margin: 0 auto;
                 margin-bottom: 2%;
                 margin-top: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-            #info {
-                margin: 2%;
+            #detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2%;
             }
-            #price-details {
+            #content2 {
+                background-color: rosybrown;
                 margin: 2%;
                 border: 1px solid black;
                 border-radius: 5px;
@@ -30,27 +43,34 @@
                 padding-bottom: 1%;
                 padding-left: 2%;
                 padding-right: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
             }
         </style>
     </header>
     <body>
+        <div class="container">
             <div id="content">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-                <h3>Radisson Blu Hotel</h3>
+                <div id="detail"><h3>Radisson Blu Hotel</h3>
                 <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017, India</p>
+                <p>National Highway 8, New Delhi 110017, India</p></div>
             </div>
-            <div id="info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Number of Adults:</strong> 2</p>
-                <p><strong>Check-in Date:</strong> 06/06/2020</p>
-                <p><strong>Check-out Date:</strong> 11/06/2020</p>
+            <div id="content2">
+                <div id="info">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Number of Adults:</strong> 2</p>
+                    <p><strong>Check-in Date:</strong> 06/06/2020</p>
+                    <p><strong>Check-out Date:</strong> 11/06/2020</p>
+                </div>
+                <div id="price-details">
+                    <p><strong>Tariff Breakdown:</strong> Rs.1000 x 2 Adults x 5 Nights</p>
+                    <p><strong>Toatal Amount:</strong> Rs.10000</p>
+                </div>
+                <p><a href="E:\HTML\Hotel Booking Website\payment.html">Pay Now</a></p>
             </div>
-            <div id="price-details">
-                <p><strong>Tariff Breakdown:</strong> Rs.1000 x 2 Adults x 5 Nights</p>
-                <p><strong>Toatal Amount:</strong> Rs.10000</p>
-            </div>
-        <p><a href="E:\HTML\Hotel Booking Website\payment.html">Pay Now</a></p>
+        </div>
     </body>
     <footer>
         <div class="foot">

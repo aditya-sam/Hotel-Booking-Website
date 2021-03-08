@@ -1,7 +1,7 @@
 <html>
     <header>
-        <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
-        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px; margin-left: 1%;">
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a>
         <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
@@ -28,16 +28,58 @@
                 margin-top: 170px;
                 margin-bottom: 170px;
                 width: 24em;
+                outline: none;
             } 
-            .city-card{
-                padding: 4%;
-                justify-content: space-evenly;
+            .city-card {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+            .city-card img{     
                 border-radius: 25%;
             }
-            #city-card{
-                margin-left: 20%;
-                margin-right: 15%;
+            .city-card div {
+                margin: 4%;
+                border-radius: 25%;
+                width: 150px;
+                height: 150px;
+                box-shadow: 10px 10px 10px grey;
             }
+            .card1 {position: relative;}
+            .card2 {position: relative;}
+            .card3 {position: relative;}
+            .card4 {position: relative;}
+            .middle {
+                transition: .1s ease;
+                opacity: 0;
+                top: -6;
+                left: -6;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.5);
+                position: absolute;
+            }
+            .text {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                top: -6;
+                left: -6;
+                right: 0;
+                bottom: 0;
+                color: #f1f1f1;
+            }
+            .card1:hover .text{opacity: 1;}
+            .card1:hover .middle{opacity: 0.5;}
+            .card2:hover .text{opacity: 1;}
+            .card2:hover .middle{opacity: 0.5;}
+            .card3:hover .text{opacity: 1;}
+            .card3:hover .middle{opacity: 0.5;}
+            .card4:hover .text{opacity: 1;}
+            .card4:hover .middle{opacity: 0.5;}
+            
             #view {
                 display: flex;
                 align-content: center;
@@ -52,13 +94,36 @@
                 <input id="search" type="text" placeholder="City"/>
             </form>
         </div>
-        <div id="city-card">
-            <a href="E:\HTML\Hotel Booking Website\list.html">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city-card">
-            </a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="city-card">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="city-card">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city-card">
+        <div class="city-card">
+            
+            <div class="card1">
+                <a href="E:\HTML\Hotel Booking Website\list.html">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Delhi</div></a>
+            </div>
+            <div class="card2">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Goa</div></a>
+            </div>
+            <div class="card3">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Hyderabad</div></a>
+            </div>
+            <div class="card4">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Kolkata</div></a>
+            </div>
         </div>     
         <div id="view"><a href="E:\HTML\Hotel Booking Website\index.html">View more>></a></div>
     </body>

@@ -1,23 +1,30 @@
 <html>
     <header>
         <a href="E:\HTML\Hotel Booking Website\index.html">
-            <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;">
+            <img src="E:\HTML\Hotel Booking Website\assests\images\logo.png" alt="logo" style="height: 60px; width: 60px; margin-left: 1%;">
         </a>
-        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a><br/>
+        <a href="E:\HTML\Hotel Booking Website\login.html" id="login">Login</a>
         <link href="E:\HTML\Hotel Booking Website\common.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
             .hotels{
-                margin: 2%;
-                background-color: rgb(132,136,139);
+                margin-top: 0%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 4%;
+                background-color: lightgray;
                 width: 40%;
-                display: block;
+                height: 200px;
+                display: flex;
             }
-            #list {
+            .hotels div{
+                margin-left: 3%;
+            }
+            .list {
                 display: flex;
                 flex-wrap: wrap;
             }
-            #list img{
+            .list img{
                 height: 200px;
                 width: 250px;
             }
@@ -29,7 +36,8 @@
                 justify-content: space-evenly;
                 margin-left: 40%;
                 margin-right: 40%;
-                padding-top: 1%;
+                padding-top: 2%;
+                padding-bottom: 2%;
             }
             #map {
                 display: none;
@@ -41,25 +49,25 @@
             <a href="#list">List view</a>
             <a href="#map">Map View</a>
         </div>
-        <div id="list">
+        <div class="list">
             
             <a href="E:\HTML\Hotel Booking Website\detail.html" class="hotels">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-                <h3>Radisson Blu Hotel</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                <div><h3>Radisson Blu Hotel</h3>
                 5 Star<br>
-                <p>New Delhi</p>  
+                <p>New Delhi</p></div>
             </a>
             <div class="hotels">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"><br>
-                <h3>The Lalit New Delhi</h3>
+                <div><h3>The Lalit New Delhi</h3>
                 <p>4.5 Star</p>
-                <p>New Delhi</p>
+                <p>New Delhi</p></div>
             </div>
             <div class="hotels">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"><br>
-                <h3>Taj Palace</h3>
+                <div><h3>Taj Palace</h3>
                 <p>4.0 Star</p>
-                <p>New Delhi</p>
+                <p>New Delhi</p></div>
             </div>
         </div>    
         <div id="map">
