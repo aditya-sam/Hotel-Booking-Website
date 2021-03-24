@@ -28,10 +28,13 @@
                 outline: none;
             } 
             .city-card {
-                display: flex;
-                align-content: center;
-                justify-content: center;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                row-gap: 100px;
+                justify-content: space-evenly;
                 background-color: #e0e0e0;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
             .city-card img{     
                 border-radius: 25%;
@@ -43,10 +46,8 @@
                 height: 150px;
                 box-shadow: 10px 10px 10px grey;
             }
-            .card1 {position: relative;}
-            .card2 {position: relative;}
-            .card3 {position: relative;}
-            .card4 {position: relative;}
+            .card {position: relative;}
+
             .middle {
                 transition: .1s ease;
                 opacity: 0;
@@ -69,14 +70,8 @@
                 bottom: 0;
                 color: #f1f1f1;
             }
-            .card1:hover .text{opacity: 1;}
-            .card1:hover .middle{opacity: 0.5;}
-            .card2:hover .text{opacity: 1;}
-            .card2:hover .middle{opacity: 0.5;}
-            .card3:hover .text{opacity: 1;}
-            .card3:hover .middle{opacity: 0.5;}
-            .card4:hover .text{opacity: 1;}
-            .card4:hover .middle{opacity: 0.5;}
+            .card:hover .text{opacity: 1;}
+            .card:hover .middle{opacity: 0.5;}
             
             #view {
                 display: flex;
@@ -114,33 +109,61 @@
         </div>
         <div class="city-card">
             
-            <div class="card1">
+            <div class="card">
                 <a href="E:\HTML\Hotel Booking Website\list.html">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
                 
                 <div class="middle"></div>
                 <div class="text">Delhi</div></a>
             </div>
-            <div class="card2">
+            <div class="card">
                 <a>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
                 
                 <div class="middle"></div>
                 <div class="text">Goa</div></a>
             </div>
-            <div class="card3">
+            <div class="card">
                 <a>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
                 
                 <div class="middle"></div>
                 <div class="text">Hyderabad</div></a>
             </div>
-            <div class="card4">
+            <div class="card">
                 <a>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
                 
                 <div class="middle"></div>
                 <div class="text">Kolkata</div></a>
+            </div>
+            <div class="card">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Chennai</div></a>
+            </div>
+            <div class="card">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Agra</div></a>
+            </div>
+            <div class="card">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Jaipur</div></a>
+            </div>
+            <div class="card">
+                <a>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg">
+                
+                <div class="middle"></div>
+                <div class="text">Bengaluru</div></a>
             </div>
         </div>     
         <div id="view">
