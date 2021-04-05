@@ -1,0 +1,76 @@
+body img{
+    height: 150px;
+    width: 150px;
+}
+#city {
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 170px;
+    margin-bottom: 170px;
+    width: 24em;
+    outline: none;
+} 
+.city-card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 100px;
+    justify-content: space-evenly;
+    background-color: #e0e0e0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.city-card img{     
+    border-radius: 25%;
+}
+.city-card div {
+    margin: 4%;
+    border-radius: 25%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+}
+.card {position: relative;}
+
+.middle {
+    transition: .1s ease;
+    opacity: 0;
+    top: -6;
+    left: -6;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+.text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    top: -6;
+    left: -6;
+    right: 0;
+    bottom: 0;
+    color: #f1f1f1;
+}
+.card:hover .text{opacity: 1;}
+.card:hover .middle{opacity: 0.5;}
+
+#view {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
