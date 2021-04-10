@@ -12,3 +12,7 @@ document.getElementsByClassName('para')[2].innerHTML += ` ${params.get('fromDate
 document.getElementsByClassName('para')[3].innerHTML += ` ${params.get('toDate')}`;
 document.getElementsByClassName('para')[4].innerHTML += ` ${price} x ${adult} Adults x ${days} Nights`;
 document.getElementsByClassName('para')[5].innerHTML += ` ${price}`;
+
+function payNow() {
+    alert('Hi your booking is successful');
+}

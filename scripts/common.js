@@ -2,7 +2,16 @@ setHeader();
 setFooter();
 
 function setHeader() {
-    var header =   `<button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal" onclick="setLoginModal()" style="display: flex; margin: 1%"> 
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    }
+    var header = `<button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal" onclick="setLoginModal()" style="display: flex; margin: 1%"> 
                         LOGIN 
                     </button>
                     <button type="button" id="logout" class="btn btn-light btn-sm" onclick="logout()" style="display: none; margin: 1%">
@@ -113,6 +122,3 @@ function logout() {
     document.getElementById('pay').innerHTML = `<button type="button" class="btn btn-success" disabled>Pay Now</button>`
 }
 
-function payNow() {
-    alert('Hi your booking is successful');
-}

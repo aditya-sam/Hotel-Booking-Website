@@ -1,11 +1,11 @@
 function listHotels(cities) {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET',`abc?=${cities}`, true)
+    xhr.open('GET', `abc?=${cities}`, true)
     xhr.send();
-    xhr.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) {
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
             var hotels = JSON.parse(this.responseText);
-            for(let eachHotel of hotels){
+            for (let eachHotel of hotels) {
                 let container = document.createElement('a');
                 container.setAttribute('href', 'E:\HTML\Hotel Booking Website\detail.html');
                 container.setAttribute('class', 'hotels');
@@ -20,7 +20,7 @@ function listHotels(cities) {
                 name.appendChild(nameHeading);
                 container.appendChild(name);
                 let stars = document.createElement('p');
-                for(var i=0; i<hotels.star; i++){
+                for (var i = 0; i < hotels.star; i++) {
                     let span = document.createElement('span');
                     span.setAttribute('class', 'fa fa-star checked');
                     stars.appendChild(span);
@@ -36,3 +36,12 @@ function listHotels(cities) {
     }
 }
 listHotels(window.location.hash.slice(1));
+
+// var map;
+// function initMap() {
+//     map = new google.maps.Map(document.getElementById("map"), {
+//         center: { lat: -34.397, lng: 150.644 },
+//         zoom: 8
+//     });
+//     document.getElementById('map').innerHTML += map;
+// }
