@@ -1,6 +1,6 @@
 function viewMore() {
     let cities = `<div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html" onclick="listHotels('Chennai')">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
 
         <div class="middle"></div>
@@ -8,7 +8,7 @@ function viewMore() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html" onclick="listHotels('Agra')">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg">
 
         <div class="middle"></div>
@@ -16,7 +16,7 @@ function viewMore() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html" onclick="listHotels('Jaipur')">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg">
 
         <div class="middle"></div>
@@ -24,7 +24,7 @@ function viewMore() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html" onclick="listHotels('Bengaluru')">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg">
 
         <div class="middle"></div>
@@ -46,7 +46,7 @@ function viewLess() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
 
         <div class="middle"></div>
@@ -54,7 +54,7 @@ function viewLess() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
 
         <div class="middle"></div>
@@ -62,7 +62,7 @@ function viewLess() {
     </a>
 </div>
 <div class="card">
-    <a>
+    <a href="E:\HTML\Hotel Booking Website\list.html">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
 
         <div class="middle"></div>
